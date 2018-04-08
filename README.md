@@ -52,3 +52,14 @@ environments/            contains environment-based overrides
 tests                    contains various tests for the advanced application
     codeception/         contains tests developed with Codeception PHP Testing Framework
 ```
+
+
+Apache settings
+
+<VirtualHost *:80>
+    DocumentRoot "C:/xampp/htdocs/mama2/backend/web"
+    ServerName mamabrass.local
+</VirtualHost>
+
+Host file settings:
+127.0.0.1 mamabrass.local
