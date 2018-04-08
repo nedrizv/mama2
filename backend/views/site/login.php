@@ -14,7 +14,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="md-card" id="login_card">
         <div class="md-card-content large-padding" id="login_form">
             <div class="login_heading">
-                <div class="user_avatar"></div>
+                <div class="user_avatar"><?= Html::img(Yii::getAlias('@url')."/img/mainlogo.png",[ 'style'=>'height:67px;', 'alt'=>'My Profile']); ?></div>
             </div>
             <?php $form = ActiveForm::begin(['id' => 'login-form']); ?>
                 <div class="uk-form-row">
@@ -27,7 +27,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     <?= Html::submitButton('Sign In', ['class' => 'md-btn md-btn-primary md-btn-block md-btn-large', 'name' => 'login-button']) ?>
                 </div>
                 <div class="uk-margin-top">
-                    <a href="#" id="login_help_show" class="uk-float-right">Need help?</a>
+                    <!-- <a href="#" id="login_help_show" class="uk-float-right">Need help?</a> -->
                     <span class="icheck-inline">
                         <?= $form->field($model, 'rememberMe')->checkbox(['data-md-icheck'=>'']) ?>
                      </span>

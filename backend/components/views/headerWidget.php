@@ -16,7 +16,8 @@ use yii\helpers\Url;
             <div class="uk-navbar-flip">
                 <ul class="uk-navbar-nav user_actions">
                     <!-- <li><a href="#" id="full_screen_toggle" class="user_action_icon uk-visible-large"><i class="material-icons md-24 md-light">&#xE5D0;</i></a></li> -->
-                    <li><a href="#" alt="Search" id="main_search_btn" class="user_action_icon"><i class="search md-24 md-light">&#xE8B6;Search</i></a></li>
+                    <li><a href="#" alt="Search" id="main_search_btn" class="user_action_icon"><i class="search md-24 md-light">
+                    <?= Html::img(Yii::getAlias('@url')."/img/search-blue1.png",[ 'style'=>'height:32px;', 'alt'=>'Search']); ?></i></a></li>
                     
                     <li data-uk-dropdown="{mode:'click',pos:'bottom-right'}">
 						
@@ -38,10 +39,10 @@ use yii\helpers\Url;
         </nav>
     </div>
     <div class="header_main_search_form">
-        <i class="md-icon header_main_search_close material-icons">&#xE5CD;</i>
+        <i class="md-icon header_main_search_close material-icons" style="top:0px;"><?= Html::img(Yii::getAlias('@url')."/img/close-sq.png",[ 'style'=>'height:27px;', 'alt'=>'Search']); ?></i>
         <form class="uk-form">
             <input type="text" class="header_main_search_input" />
-            <button class="header_main_search_btn uk-button-link"><i class="md-icon material-icons">&#xE8B6;</i></button>
+            <button class="header_main_search_btn uk-button-link" style="top:-4px;"><i class="md-icon material-icons"><?= Html::img(Yii::getAlias('@url')."/img/search-blue1.png",[ 'style'=>'height:32px;', 'alt'=>'Search']); ?></i></button>
         </form>
     </div>
 </header>
