@@ -250,12 +250,12 @@ class User extends \yii\db\ActiveRecord
 
 	public static function getAdmPhoto($imgName)
     {
-	   if(empty($imgName))
-       {
-            return Yii::getAlias('')."/rkpms/upload/profile/no_images_view_profile.png";
-       }else{
-            return Yii::getAlias('').'/rkpms/upload/profile/'.$imgName;
-       }
+	//    if(empty($imgName))
+    //    {
+            return Yii::getAlias('@url')."/img/profile/default_avatar_male.jpg";
+    //    }else{
+    //         return Yii::getAlias('@url').'/img/profile/'.$imgName;
+    //    }
     }
 
     public function getTeamList() { 

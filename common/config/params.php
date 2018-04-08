@@ -5,13 +5,13 @@ return [
     'user.passwordResetTokenExpire' => 3600,
 	'params' => [
 		// Profile images paths
-		  'profileImagesPath'=>'http://localhost/mamabrass/upload/profile/',
-		  'profileImagesMediumPath'=>'http://localhost/mamabrass/upload/profile/medium/',
-		  'profileImagesSmallPath'=>'http://localhost/mamabrass/upload/profile/small/',
-		  'upload_profileImagePath'=>$_SERVER['DOCUMENT_ROOT'].'/mamabrass/upload/profile/',
+		  'profileImagesPath'=>'http://mamabrass.local/upload/profile/',
+		  'profileImagesMediumPath'=>'http://mamabrass.local/upload/profile/medium/',
+		  'profileImagesSmallPath'=>'http://mamabrass.local/upload/profile/small/',
+		  'upload_profileImagePath'=>$_SERVER['DOCUMENT_ROOT'].'/upload/profile/',
 	 
 	 // No images pasths
-		  'noImagesPath'=>'http://localhost/mamabrass/upload/no_images/',
+		  'noImagesPath'=>'http://mamabrass.local/upload/no_images/',
 
 ]
 ];
